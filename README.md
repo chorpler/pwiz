@@ -1,8 +1,15 @@
-# **WARNING** Don't use this branch (`darwin`) for building on a non-MacOS system!
+# ⚠️ WARNING: Don't use this branch (`darwin` or `darwin/*`) for building on a non-MacOS system!
 
-This branch is forcing the build system to use MacOS-using-gcc-not-clang mode, and is specifically intended for building idpQonvert. There are also some changes to the source code forcing it into MacOS build mode. I haven't tried using it to build other things or on other platforms.
+This branch is forcing the build system to use MacOS-using-gcc-not-clang mode, and is specifically intended for building **idpQonvert**.
 
-![ProteoWizard Logo](http://www.proteowizard.org/img/proteowizard-logo.jpg "ProteoWizard")
+There are also some changes to the source code forcing it into MacOS build mode. I haven't tried using it to build anything else, or on other platforms.
+
+See [build notes](BUILDING.md) for more details on changes.
+
+<br>
+<br>
+
+![ProteoWizard Logo](proteowizard-logo.jpg "ProteoWizard")
 
 The ProteoWizard Library and Tools are a set of modular and extensible open-source, cross-platform tools and software libraries that facilitate proteomics data analysis.
 

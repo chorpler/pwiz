@@ -79,7 +79,10 @@
     #include <sys/types.h>
     #include <sys/stat.h>
     #include <sys/time.h>
-#ifndef __CYGWIN__
+// #ifndef __CYGWIN__
+// #include <sys/sysinfo.h>
+// #endif
+#if defined (WIN32) && ! defined (__CYGWIN__)
 #include <sys/sysinfo.h>
 #endif
     #include <sys/wait.h>

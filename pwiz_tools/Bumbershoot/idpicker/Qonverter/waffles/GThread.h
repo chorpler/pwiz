@@ -20,6 +20,10 @@
 
 namespace GClasses {
 
+#ifndef DARWIN
+#define DARWIN 1
+#endif
+
 #ifdef WINDOWS
 #	define BAD_HANDLE (void*)1
 	typedef void* THREAD_HANDLE;

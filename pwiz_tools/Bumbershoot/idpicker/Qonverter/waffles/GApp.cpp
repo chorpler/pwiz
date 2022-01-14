@@ -40,6 +40,12 @@
 #include <sstream>
 #include <fstream>
 
+#ifndef DARWIN
+#define DARWIN 1
+#endif
+#ifdef DARWIN
+# include "fenv.h"
+#endif
 using namespace GClasses;
 using std::cout;
 using std::string;
@@ -587,6 +593,7 @@ void GApp::enableFloatingPointExceptions()
 #else
 #	ifdef DARWIN
 	// todo: Anyone know how to do this on Darwin?
+	feenableexcept(FE_INVALID | FE_DIVBYZERO | FE_OVERFLOW);
 #	else
 	feenableexcept(FE_INVALID | FE_DIVBYZERO | FE_OVERFLOW);
 #	endif

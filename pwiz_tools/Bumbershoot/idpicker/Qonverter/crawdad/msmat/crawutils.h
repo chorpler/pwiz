@@ -77,6 +77,8 @@
 typedef __int64 off64_t; //off_t is only 32-bit on 32-bit windows
 #else
 
+#define _LARGEFILE_SOURCE
+#define _FILE_OFFSET_BITS=64
 #ifndef _LARGEFILE_SOURCE
 #error "need to define _LARGEFILE_SOURCE!!"
 #endif    /* end _LARGEFILE_SOURCE */

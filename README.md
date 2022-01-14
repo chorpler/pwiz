@@ -1,3 +1,6 @@
+# **WARNING** Don't use this branch (`darwin`) for building on a non-MacOS system!
+
+This branch is forcing the build system to use MacOS-using-gcc-not-clang mode, and is specifically intended for building idpQonvert. There are also some changes to the source code forcing it into MacOS build mode. I haven't tried using it to build other things or on other platforms.
 
 ![ProteoWizard Logo](http://www.proteowizard.org/img/proteowizard-logo.jpg "ProteoWizard")
 

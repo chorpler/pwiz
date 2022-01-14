@@ -1,4 +1,4 @@
-# Building ProteoWizard components in MacOS (on Catalina 10.15.7)
+# Building ProteoWizard components in MacOS
 
 
 # Building idpQonvert
